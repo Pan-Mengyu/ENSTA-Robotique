@@ -1,0 +1,8 @@
+(define (problem HANOI-3-0)
+(:domain HANOI)
+(:objects P1 P2 P3 D1 D2 D3)
+(:INIT (clear D1) (on D1 D2) (on D2 D3) (onPic D3 P1) (picEmpty P2) (picEmpty P3) 
+(smaller D1 D2) (smaller D2 D3) (handempty) 
+)
+(:goal (AND (on D1 D2) (on D2 D3) (onPic D3 P3)))
+)

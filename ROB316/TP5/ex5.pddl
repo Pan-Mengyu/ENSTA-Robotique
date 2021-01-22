@@ -1,0 +1,6 @@
+(define (problem TREE-9-0)
+(:domain TREE)
+(:objects A B C D)
+(:INIT (FROM A B) (FROM A C) (FROM C D) (FROM B C) (CLEAR B) (CLEAR C) (CLEAR D) (CHOOSING A))
+(:goal (AND (TO A B) (TO B C) (TO C D)))
+)
