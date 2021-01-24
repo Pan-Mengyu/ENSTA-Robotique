@@ -1,5 +1,5 @@
 # ENSTA-Robotique
-Here is what I do in the courses, most of them are code but some contain the report
+Here is what I do in the courses, most of them are code but some contain the report. May this help other ENSTA students in robotic.
 
 For ROB 306
 https://drive.google.com/drive/folders/1rCQQ7lcjCyM2734vkEhKAfzXD-JHKz6S?usp=sharing
