@@ -9,11 +9,12 @@ private:
 	timespec m_stopTime;
 
 public:
+	Chrono();
 	double startTime() const;
 	double stopTime() const;
 	void restart();
 	void stop();
-	bool isactive();
+	bool isactive() const;
 	double lap() const;
 };
 
