@@ -9,8 +9,10 @@ int main(int argc, char* argv[]){
 	if (argc > 1){
 		waitTime_s = std::atoi(argv[1]);
 	}
-	std::cout<<"Wait time for"<<waitTime_s<<"second"<<std::endl;
+	Chrono timeCounter;
+	std::cout<<"Wait time for "<<waitTime_s<<" second"<<std::endl;
 	sleep(waitTime_s);
 	std::cout<<"finish waiting"<<std::endl;
+	printf("duration is %f\n",timeCounter.lap());
 	return 0;
 }
