@@ -1,5 +1,5 @@
 #include "chrono.h"
-#include "timespec.h"
+#include "timespec.hpp"
 #include <time.h>
 
 Chrono::Chrono(){
@@ -15,14 +15,14 @@ double Chrono::stopTime() const{
 }
 
 void Chrono::restart() {
-	m_startTime = timspec_now();
+	m_startTime = timespec_now();
 }
 
 void Chrono::stop() {
-	m_stopTime = timspec_now();
+	m_stopTime = timespec_now();
 }
 
-bool Chrono::isactive() {
+bool Chrono::isactive() const{
 	return m_startTime == m_stopTime;
 }
 
@@ -34,5 +34,5 @@ double Chrono::lap() const{
 	else{
 		duration = m_stopTime-m_startTime;
 	}
-	return duration;
+	return timespec_to_ms(duration);
 }
