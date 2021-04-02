@@ -2,20 +2,25 @@
 #define timer_h_INCLUDED
 
 #include <time.h>
+#include <stdbool.h>
+
 
 class Timer{
 	public:
-		double counter;
-		void Timer();
-		void ~Timer();
+		Timer();
+		~Timer();
 		void start(double duration_ms);
 		void stop();
+		double counter;
+		bool stopFlag = false;
+		bool working = false;
+		double duration;
 
-	private:
-		void callback()
+	protected:
+		void callback();
 };
 
-class PeriodcTimer: public Timer
+class PeriodicTimer: public Timer
 {
 	public:
 		void start(double duration_ms);
