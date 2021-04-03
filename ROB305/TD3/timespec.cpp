@@ -1,6 +1,6 @@
 #include <time.h>
 #include <cerrno>
-#include "timespec.hpp"
+#include "timespec.h"
 
 
 double timespec_to_ms(const timespec& time_ts)
