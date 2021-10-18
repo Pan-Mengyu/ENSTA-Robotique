@@ -1,0 +1,4 @@
+Q1Mean goal reaching time : 2033.8095
+Q2Mean goal reaching time : 1369.2857
+Q3Mean goal reaching time : 1733.5714
+Q4Total error : 374.2721
